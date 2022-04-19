@@ -57,7 +57,7 @@ const Beauty = () => {
         />
       </div> */}
       <div className='section-b-space'>{/* <VideoSection /> */}</div>
-      <TopCollection
+      {/* <TopCollection
         innerClass='title1'
         inner='title-inner1'
         type='beauty'
@@ -67,8 +67,8 @@ const Beauty = () => {
         designClass='p-t-0 ratio_asos'
         noSlider='true'
         cartClass='cart-info cart-wrap'
-      />
-      <Blog type='beauty' title='title1' inner='title-inner1' />
+      /> */}
+      {/* <Blog type='beauty' title='title1' inner='title-inner1' /> */}
       <section className='instagram ratio_square section-b-space'>
         {/* <Instagram type='beauty' /> */}
         <MasterParallaxBanner

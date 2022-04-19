@@ -8,15 +8,15 @@ const MasterBanner = ({ img, title, desc, link, classes, btn, btnClass }) => {
         <Container>
           <Row>
             <Col>
-              <div className="slider-contain">
+              <div className='slider-contain'>
                 <div>
                   <h4>{title}</h4>
                   <h1>{desc}</h1>
-                  <Link href={link}>
+                  {/* <Link href={link}>
                     <a className={`btn btn-solid ${btnClass ? btnClass : ""}`}>
                       {btn ? btn : "Shop Now"}{" "}
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </Col>
