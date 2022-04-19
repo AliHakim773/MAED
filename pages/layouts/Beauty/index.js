@@ -10,6 +10,7 @@ import { Product5 } from "../../../services/script";
 import ModalComponent from "../../../components/common/Modal";
 import Helmet from "react-helmet";
 import MasterFooter from "../../../components/footers/common/MasterFooter";
+import { Product7 } from "../../../services/script";
 
 const Beauty = () => {
   useEffect(() => {
@@ -32,7 +33,14 @@ const Beauty = () => {
       <ModalComponent />
       <MainBanner />
       <div className='section-b-space'>
-        <AboutSection />
+        {/* <AboutSection /> */}
+        <TopCollection
+          type='fashion'
+          productSlider={Product7}
+          designClass='section-b-space ratio_asos'
+          noSlider={false}
+          cartClass='cart-info cart-wrap'
+        />
       </div>
       <div className='section-b-space'>
         <TopCollection
@@ -47,9 +55,7 @@ const Beauty = () => {
           cartClass='cart-info cart-wrap'
         />
       </div>
-      <div className='section-b-space'>
-        <VideoSection />
-      </div>
+      <div className='section-b-space'>{/* <VideoSection /> */}</div>
       <TopCollection
         innerClass='title1'
         inner='title-inner1'
