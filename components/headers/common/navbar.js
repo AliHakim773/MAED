@@ -162,7 +162,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/blogs/no_sidebar'>
+              <Link href='/page/account/contact'>
                 <a>Contact</a>
               </Link>
             </li>
