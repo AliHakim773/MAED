@@ -7,10 +7,10 @@ import Instagram from "../../../components/common/instagram/instagram2";
 import ThemeSettings from "../../../components/customizer/theme-settings";
 import Blog from "../../../components/common/Blog/blog1";
 import { Product5 } from "../../../services/script";
+import { Product7 } from "../../../services/script";
 import ModalComponent from "../../../components/common/Modal";
 import Helmet from "react-helmet";
 import MasterFooter from "../../../components/footers/common/MasterFooter";
-import { Product7 } from "../../../services/script";
 
 const Beauty = () => {
   useEffect(() => {

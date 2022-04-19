@@ -69,55 +69,61 @@ const HeaderOne = ({
 
   return (
     <div>
-      <header id="sticky" className={`sticky ${headerClass}`}>
-        <div className="mobile-fix-option"></div>
+      <header id='sticky' className={`sticky ${headerClass}`}>
+        <div className='mobile-fix-option'></div>
         {/*Top Header Component*/}
         {noTopBar ? "" : <TopBarDark topClass={topClass} />}
 
         <Container>
           <Row>
             <Col>
-              <div className="main-menu">
-                <div className="menu-left">
-                  <div className="navbar">
+              <div className='main-menu'>
+                <div className='menu-left'>
+                  <div className='navbar'>
                     <a href={null} onClick={openNav}>
-                      <div className="bar-style">
+                      <div className='bar-style'>
                         <i
-                          className="fa fa-bars sidebar-bar"
-                          aria-hidden="true"
+                          className='fa fa-bars sidebar-bar'
+                          aria-hidden='true'
                         ></i>
                       </div>
                     </a>
                     {/*SideBar Navigation Component*/}
-                    <SideBar />
+                    {/* <SideBar /> */}
                   </div>
-                  <div className="brand-logo">
+                  <div className='brand-logo'>
                     <LogoImage logo={logoName} />
                   </div>
                 </div>
-                <div className="menu-right pull-right">
+                <div className='menu-right pull-right'>
                   {/*Top Navigation Bar Component*/}
                   <NavBar />
 
                   <div>
-                    <div className="icon-nav">
+                    <div className='icon-nav'>
                       <ul>
-                        <li className="onhover-div mobile-search">
+                        <li className='onhover-div mobile-search'>
                           <div>
                             <Media
                               src={"/assets/images/icon/search.png"}
                               onClick={openSearch}
-                              className="img-fluid"
-                              alt=""
+                              className='img-fluid'
+                              alt=''
                             />
                           </div>
                         </li>
                         <Currency icon={"/assets/images/icon/setting.png"} />
                         {/*Header Cart Component */}
                         {direction === undefined ? (
-                          <CartContainer layout={direction} icon={"/assets/images/icon/cart.png"} />
+                          <CartContainer
+                            layout={direction}
+                            icon={"/assets/images/icon/cart.png"}
+                          />
                         ) : (
-                          <Cart layout={direction} icon={"/assets/images/icon/cart.png"} />
+                          <Cart
+                            layout={direction}
+                            icon={"/assets/images/icon/cart.png"}
+                          />
                         )}
                       </ul>
                     </div>

@@ -12,13 +12,6 @@ const Data = [
     link: "#",
     btn: "shop now",
   },
-  {
-    imgClass: "home35",
-    title: "save 30% off",
-    about: "beauty products",
-    link: "#",
-    btn: "shop now",
-  },
 ];
 
 const Banner = ({ imgClass, title, about, btn }) => {
