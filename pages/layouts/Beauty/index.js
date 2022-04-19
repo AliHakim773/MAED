@@ -11,6 +11,7 @@ import { Product7 } from "../../../services/script";
 import ModalComponent from "../../../components/common/Modal";
 import Helmet from "react-helmet";
 import MasterFooter from "../../../components/footers/common/MasterFooter";
+import MasterParallaxBanner from "./components/MasterParallaxBanner";
 
 const Beauty = () => {
   useEffect(() => {
@@ -42,7 +43,7 @@ const Beauty = () => {
           cartClass='cart-info cart-wrap'
         />
       </div>
-      <div className='section-b-space'>
+      {/* <div className='section-b-space'>
         <TopCollection
           type='beauty'
           innerClass='title1'
@@ -54,7 +55,7 @@ const Beauty = () => {
           noSlider='true'
           cartClass='cart-info cart-wrap'
         />
-      </div>
+      </div> */}
       <div className='section-b-space'>{/* <VideoSection /> */}</div>
       <TopCollection
         innerClass='title1'
@@ -69,7 +70,14 @@ const Beauty = () => {
       />
       <Blog type='beauty' title='title1' inner='title-inner1' />
       <section className='instagram ratio_square section-b-space'>
-        <Instagram type='beauty' />
+        {/* <Instagram type='beauty' /> */}
+        <MasterParallaxBanner
+          bg='parallax-banner13'
+          parallaxClass='text-center p-left'
+          title='optional'
+          subTitle1='optional'
+          subTitle2='optional'
+        />
       </section>
       <MasterFooter
         footerClass={`footer-light`}
